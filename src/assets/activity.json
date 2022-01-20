@@ -1,0 +1,183 @@
+
+{
+    "activityType": "visita_leiturista",
+    "date": "2021-11-30",
+    "resourceId": "ASDF",
+    "timeSlot": "9-12",
+    "duration": "33",
+    "ul_condominio": "2",
+    "streetAddress": "Aca a la vuelta 33",
+    "ul_address1": "Aca ponemos datos adicionales",
+    "city": "Curasao",
+    "stateProvince": "Sao Paulo",
+    "postalCode": "3325",
+    "latitude": "",
+    "longitude": "",
+    "slaWindowStart": "2021-11-30 00:00:00",
+    "slaWindowEnd": "2021-12-09 00:00:00",
+    "ul_responsavel": "Joao",
+    "ul_funcao_do_responsavel": "Portero",
+    "ul_celular_responsavel": "1122334455",
+    "ul_email_responsavel": "abc@morador.com",
+    "ul_faixa_consumo_json": [
+        {
+            "faixa": "1",
+            "peso_minimo": "0",
+            "peso_maximo": "0.1",
+            "porc_divergencia": "20000"
+        },
+        {
+            "faixa": "10",
+            "peso_minimo": "0.901",
+            "peso_maximo": "1",
+            "porc_divergencia": "1900"
+        },
+        {
+            "faixa": "15",
+            "peso_minimo": "10.001",
+            "peso_maximo": "14",
+            "porc_divergencia": "650"
+        }
+    ],
+    "ul_os_json": [
+        {
+            "ul_blocco": "BLOCCO 1",
+            "ordenServicio": [
+                {
+                    "activityType": "Leitura individual",
+                    "activityStatus": "initiated",
+                    "duration": "0.5",
+                    "ul_nro_orden": "",
+                    "ul_unidade": "1",
+                    "ul_uc": "",
+                    "ul_status_uc": "",
+                    "ul_sla_start": "2021-11-30",
+                    "ul_sla_end": "2021-12-09",
+                    "ul_morador": "Joao",
+                    "ul_celular_morador": "1122334455",
+                    "ul_email_morador": "abc@morador.com",
+                    "ul_medidor": "102030",
+                    "ul_medidor_registrado": "102030",
+                    "ul_consumo": "2",
+                    "ul_leitura": "2322",
+                    "ul_leitura_anterior": "2122",
+                    "ul_media_consumo_m3": "3",
+                    "ul_factor_conversao": "2",
+                    "ul_ocorrencia": "dificultad tecnica",
+                    "ul_observacao_ocurrencia": "falta herramienta",
+                    "ul_observacao": "La dejé en el auto",
+                    "ul_responsavel": "Joao",
+                    "ul_funcao_do_responsavel": "Portero",
+                    "ul_celular_responsavel": "1122334455",
+                    "ul_email_responsavel": "abc@morador.com",
+                    "ul_origem_suspensao": "",
+                    "ul_motivo_suspensao": "",
+                    "ul_foto": "foto en base 64",
+                    "ul_boletos_json": [
+                        {
+                            "ul_valor": "51.18",
+                            "ul_fecha_vto": "2021-02-20",
+                            "ul_competencia": "02/2021"
+                        },
+                        {
+                            "ul_valor": "51.23",
+                            "ul_fecha_vto": "2021-03-20",
+                            "ul_competencia": "03/2021"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ul_blocco": "BLOCCO 2",
+            "ordenServicio": [
+                {
+                    "activityType": "Leitura individual",
+                    "activityStatus":"initiated",
+                    "duration": "2",
+                    "ul_nro_orden": "",
+                    "ul_unidade": "1",
+                    "ul_uc": "",
+                    "ul_status_uc": "",
+                    "ul_sla_start": "2021-11-30",
+                    "ul_sla_end": "2021-12-09",
+                    "ul_morador": "Joao",
+                    "ul_celular_morador": "1122334455",
+                    "ul_email_morador": "abc@morador.com",
+                    "ul_medidor": "102030",
+                    "ul_medidor_registrado": "102030",
+                    "ul_consumo": "2",
+                    "ul_leitura": "2322",
+                    "ul_leitura_anterior": "2122",
+                    "ul_media_consumo_m3": "3",
+                    "ul_factor_conversao": "2",
+                    "ul_ocorrencia": "dificultad tecnica",
+                    "ul_observacao_ocurrencia": "falta herramienta",
+                    "ul_observacao": "La dejé en el auto",
+                    "ul_responsavel": "Joao",
+                    "ul_funcao_do_responsavel": "Portero",
+                    "ul_celular_responsavel": "1122334455",
+                    "ul_email_responsavel": "abc@morador.com",
+                    "ul_origem_suspensao": "",
+                    "ul_motivo_suspensao": "",
+                    "ul_foto": "foto en base 64",
+                    "ul_boletos_json": [
+                        {
+                            "ul_valor": "51.18",
+                            "ul_fecha_vto": "2021-02-20",
+                            "ul_competencia": "02/2021"
+                        },
+                        {
+                            "ul_valor": "51.23",
+                            "ul_fecha_vto": "2021-03-20",
+                            "ul_competencia": "03/2021"
+                        }
+                    ]
+                },
+                {
+                    "activityType": "Leitura individual",
+                    "activityStatus": "finalized",
+                    "duration": "2",
+                    "ul_nro_orden": "",
+                    "ul_unidade": "2",
+                    "ul_uc": "",
+                    "ul_status_uc": "",
+                    "ul_sla_start": "2021-11-30",
+                    "ul_sla_end": "2021-12-09",
+                    "ul_morador": "Joao",
+                    "ul_celular_morador": "1122334455",
+                    "ul_email_morador": "abc@morador.com",
+                    "ul_medidor": "102030",
+                    "ul_medidor_registrado": "102030",
+                    "ul_consumo": "2",
+                    "ul_leitura": "2322",
+                    "ul_leitura_anterior": "2122",
+                    "ul_media_consumo_m3": "3",
+                    "ul_factor_conversao": "2",
+                    "ul_ocorrencia": "dificultad tecnica",
+                    "ul_observacao_ocurrencia": "falta herramienta",
+                    "ul_observacao": "La dejé en el auto",
+                    "ul_responsavel": "Joao",
+                    "ul_funcao_do_responsavel": "Portero",
+                    "ul_celular_responsavel": "1122334455",
+                    "ul_email_responsavel": "abc@morador.com",
+                    "ul_origem_suspensao": "",
+                    "ul_motivo_suspensao": "",
+                    "ul_foto": "foto en base 64",
+                    "ul_boletos_json": [
+                        {
+                            "ul_valor": "51.18",
+                            "ul_fecha_vto": "2021-02-20",
+                            "ul_competencia": "02/2021"
+                        },
+                        {
+                            "ul_valor": "51.23",
+                            "ul_fecha_vto": "2021-03-20",
+                            "ul_competencia": "03/2021"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
