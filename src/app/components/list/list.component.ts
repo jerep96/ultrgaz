@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { activityList } from 'src/app/models/activity.interface';
 import { ActivityService } from 'src/app/services/activity.service';
+import { OrdenServicio } from 'src/app/models/servicio.interface'
 
 @Component({
   selector: 'app-list',
@@ -9,9 +10,9 @@ import { ActivityService } from 'src/app/services/activity.service';
 })
 export class ListComponent implements OnInit {
 
-  activityList: activityList[] = [];
+  public activityList!: activityList;
 
-  constructor(public activity:ActivityService) {
+  constructor(public _activity:ActivityService) {
   }
 
   completeActivities(ordenServicio:any){
@@ -23,10 +24,17 @@ export class ListComponent implements OnInit {
     }
   return completas}
 
+
   ngOnInit(): void {
-    this.activity.getActivity().subscribe(data => {
+    this._activity.getActivity().subscribe(
+      data => {
       this.activityList = data;
-      console.log('Activity List', this.activityList)
+      let bloques = this.activityList['ul_os_json'].replace(/'/g, '"')
+      bloques = JSON.parse(bloques)
+      //let ordenServicio = bloques.ordenServicio
+      console.log('bloques', bloques[0])
+      console.log('ACtivity list', this.activityList)
+
     })
 
   }

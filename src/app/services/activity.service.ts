@@ -15,9 +15,9 @@ export class ActivityService {
     console.log('Service running!')
    }
 
-   getActivity():Observable<activityList[]>{
+   getActivity():Observable<activityList>{
      let endpoint = '../../assets/activity_2.json'
 
-    return this.http.get<activityList[]>(endpoint);
+    return this.http.get<activityList>(endpoint);
   }    
 }

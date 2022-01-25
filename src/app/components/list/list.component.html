@@ -11,14 +11,14 @@
   <body>
     <div class="container mt-4">
         <h2>Ordens de serviço</h2>
-        <p>{{ activityList }}</p>
-        <p *ngFor="let activity of activityList">{{ activity.activityType }}</p>
+        <p>{{ activityList?.activityType }}</p>
         <div class="accordion" id="accordionExample">
-          <div *ngFor="let blocos of activity.info.ul_os_json; let i = index">
-            <div class="accordion-item">
+          <div *ngFor="let blocos of activityList?.ul_os_json; let i = index">
+            <p>{{ blocos |json }}</p>
+            <!--<div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseOne'+i" aria-expanded="false" [attr.aria-controls]="'collapseOne'+i">
-                  {{ blocos.ul_blocco }} <span class="ml-5" style="margin: auto;">[{{completeActivities(blocos.ordenServicio) }}/ {{blocos.ordenServicio.length }}]</span>
+                  {{ blocos |json }} <span class="ml-5" style="margin: auto;">[{{completeActivities(blocos.ordenServicio) }}/ {{blocos.ordenServicio.length }}]</span>
                 </button>
               </h2>
               <div [id]="'collapseOne'+i" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -52,7 +52,7 @@
                     </table>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
     </div>
